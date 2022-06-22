@@ -8,9 +8,9 @@ let getDelivery = document.querySelector('.delivery')
 let getSample = document.querySelector('.sample')
 let getCaustic50 = document.querySelector('.caustic-text50')
 let getCaustic25 = document.querySelector('.caustic-text25')
-let getSulfuric50 = document.querySelector('.caustic-text50')
-let getSulfuric25 = document.querySelector('.caustic-text25')
-let getSulfuric20 = document.querySelector('.caustic-text20')
+let getSulfuric50 = document.querySelector('.sulfuric-text50')
+let getSulfuric25 = document.querySelector('.sulfuric-text25')
+let getSulfuric20 = document.querySelector('.sulfuric-text20')
 
 
 
