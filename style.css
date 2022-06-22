@@ -1,0 +1,242 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  .input-container {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    position: relative;
+    /* background: blue */
+  }
+  
+  .sub-container {
+    display: grid;
+    width: 120px;
+    /* background:pink; */
+    grid-template-columns: 10px;
+  }
+  
+  .inputs {
+    background: rgb(186, 247, 232);
+    margin: 0px;
+    width: 100px;
+    height: 30px;
+    font-size: 30px;
+    text-align: center;
+    border:solid black 3px
+  }
+  
+  .enter {
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .enter:active{
+    transform: scale(0.95);
+  }
+
+  p {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .result {
+    width: 200px;
+    height: 100px;
+    /* background: green; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  
+    transform: translateY(106px);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  
+    font-size: 12px;
+  }
+  
+  .checkbox {
+    font-size: 20px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  
+  .side-bar {
+    display: flex;
+    width: 100%;
+    background: rgb(183, 177, 241);
+  }
+  
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  
+  li  {
+    /* margin-left: 100px; */
+    margin-right: 100px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  li:hover {
+    color: white;
+    cursor: pointer;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+  }
+
+  .clear, .clear-pH{
+    transform:translate(20px,133px);
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+  
+  }
+
+  .clear:hover, .clear-pH:hover{
+      background-color: rgb(236, 149, 149);
+  }
+
+  .clear-pH{
+    position: relative;
+    left:-60px
+  }
+
+  .ph-container{
+    width:500px;
+    height: 200px;
+    position: relative;
+    left: 470px;
+    top: 30px
+  }
+
+  .ph-options{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 30px
+  }
+
+  .ph-options li{
+    font-size: 60px
+  }
+
+ .sulfuric:hover{
+   color: rgb(235, 96, 96);
+   transform: scale(1.05);
+ }
+
+ .caustic:hover{
+   color:rgb(130, 130, 253);
+   transform: scale(1.05);
+ }
+
+ .caustic-title,.sulfuric-title{
+   width: 400px;
+   position: relative;
+   right: 50px;
+ }
+
+ .fifty-text{
+   position: relative;
+   top: -16px;
+   left: 23px;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+ }
+
+ .ten-text{
+   position: relative;
+   top:-29px;
+   left:23px;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+ }
+
+ .ten{
+   position:relative;
+   top:-13px
+
+ }
+
+ .ten-div,.fifty-div{
+   width: 90px;
+ }
+
+ .pH-results{
+   position: relative;
+   left: 60px
+ }
+
+ .caustic-options,.sulfuric-options{
+   width: 250px;
+   height: 200px;
+   border: solid black 4px;
+   background: rgb(186, 247, 232);
+   position: relative;
+   left: 90px;
+   top: 100px;
+   display: grid;
+   justify-content: left;
+ }
+
+ .caustic-options h3, .sulfuric-options h3{
+   margin-left: 5px;
+   margin-top: 20px;
+   display: flex;
+ }
+
+ .caustic50,.caustic25, .sulfuric50, .sulfuric25, .sulfuric20{
+   font-weight: normal;
+   position: relative;
+   left: 5px
+ }
+
+ .sulfuric1,.sulfuric5{
+   left: 13px
+ }
+
+ .equation{
+   width: 500px;
+   height: 200px;
+   position: relative;
+   background-size: contain;
+   background-repeat: no-repeat;
+ }
+ 
+
+.sulfuricEQ{
+  background-image: url('sulfuricEQ.png');
+  top: 180px;
+  left: 400px;
+}
+ 
+.causticEQ{
+  background-image: url('causticEQ.png');
+  top: 180px;
+  left: 400px;
+}
+.activeEQ{
+  background-image: url('activeEQ.png');
+  top: 80px;
+  left: 450px;
+}
+.ffaEQ{
+  background-image: url('ffaEQ.png');
+  top: 80px;
+  left: 450px;
+}
+
+
+ 

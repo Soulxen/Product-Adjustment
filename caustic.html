@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caustic Add</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="side-bar">
+        <ul>
+            <a href="index.html">
+                <li class="ph-drop">pH Adjustment</li>
+            </a>
+            <a href="index02.html">
+                <li>FFA/Moisture</li>
+            </a>
+            <a href="index03.html">
+                <li class="toggle-activity" onclick="toggleActivity()">Activity/Solids</li>
+            </a>
+        </ul>
+    </div>
+    <div class="header">
+        <h1 class="title"> Product Adjustment Widget
+        </h1>
+    </div>
+<div class="input-container container">
+    
+    <div class="sub-container">
+        <div class="caustic-title"><h1>100% Caustic Add</h1></div>
+        <input type="text" class="delivery inputs"> <p>Delivery(mL)</p>
+        <input type="radio" name="normality" class="fifty"><div class="fifty-div"><p class="fifty-text">0.5N NaOH </p></div>
+        <input type="radio" name="normality" class="ten"><div class="ten-div"><p class="ten-text">0.1N NaOH</p></div>
+        <input type="text" class="sample inputs"> <p>Sample Weight(g)</p>
+        <input type="text" class="bw inputs"> <p> Batch Weight</p> <br>
+        <button class="activity enter" onclick="casuticAdjustment()">Calculate</button>
+    </div>
+    <div class="result">
+        <input type="text" class="adjustment-result pH-results">
+        <button class='clear-pH' onclick="clearPH()">Clear</button>
+    </div>
+    <div class="caustic-options">
+        <h3 class="caustic-text50">50% Caustic:</h3>
+        <h3 class="caustic-text25">25% Caustic:</h3>
+    </div>
+
+</div>
+<div class="equation causticEQ">
+</div>
+
+
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
+

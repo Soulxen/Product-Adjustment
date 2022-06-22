@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sulfuric Add</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="side-bar">
+        <ul>
+            <a href="index.html">
+                <li class="ph-drop">pH Adjustment</li>
+            </a>
+            <a href="index02.html">
+                <li>FFA/Moisture</li>
+            </a>
+            <a href="index03.html">
+                <li class="toggle-activity" onclick="toggleActivity()">Activity/Solids</li>
+            </a>
+        </ul>
+    </div>
+    <div class="header">
+        <h1 class="title"> Product Adjustment Widget
+        </h1>
+    </div>
+<div class="input-container container">
+    
+    <div class="sub-container">
+        <div class="sulfuric-title"><h1>98% Sulfuric Add</h1></div>
+        <input type="text" class="delivery inputs"> <p>Delivery(mL)</p>
+        <input type="radio" name="normality" class="fifty"><div class="fifty-div"><p class="fifty-text sulfuric5">0.5N HCl</p></div>
+        <input type="radio" name="normality" class="ten"><div class="ten-div"><p class="ten-text sulfuric1">0.1N HCl</p></div>
+        <input type="text" class="sample inputs"> <p>Sample Weight(g)</p>
+        <input type="text" class="bw inputs"> <p> Batch Weight</p> <br>
+        <button class="activity enter" onclick="sulfuricAdjustment()">Calculate</button>
+    </div>
+    <div class="result">
+        <input type="text" class="adjustment-result pH-results">
+        <button class='clear-pH' onclick="clearPH2()">Clear</button>
+    </div>
+    <div class="sulfuric-options">
+        <h3 class="sulfuric-text50">50% Sulfuric:</h3>
+        <h3 class="sulfuric-text25">25% Sulfuric:</h3>
+        <h3 class="sulfuric-text20">20% Sulfuric:</h3>
+
+    </div>
+
+</div>
+<div class="equation sulfuricEQ">
+</div>
+
+
+
+
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Adjustment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="side-bar">
+        <ul>
+            <a href="index.html">
+                <li class="ph-drop">pH Adjustment</li>
+            </a>
+            <a href="index02.html">
+                <li>FFA/Moisture</li>
+            </a>
+            <a href="index03.html">
+                <li class="toggle-activity" onclick="toggleActivity()">Activity/Solids</li>
+            </a>
+        </ul>
+    </div>
+    <div class="header">
+        <h1 class="title"> Product Adjustment Widget
+        </h1>
+    </div>
+<div class="input-container container">
+    <div class="sub-container">
+        <h1>Activity/Solids</h1>
+        <input type="text" class="actual inputs"> <p>Actual(%)</p>
+        <input type="text" class="target inputs"> <p>Target(%)</p>
+        <input type="text" class="bw inputs"> <p> Batch Weight</p> <br>
+        <button class="activity enter" onclick="activeAdjustment()">Calculate</button>
+    </div>
+    <div class="result">
+        <p class='checkbox'>80%</p>
+        <input type="checkbox" name="80%" class="percent-add">
+        <input type="text" class="adjustment-result">
+        <button class='clear' onclick="clear01()">Clear</button>
+    </div>
+</div>
+<div class="equation activeEQ">
+</div>
+
+
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
+
