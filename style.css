@@ -116,11 +116,12 @@ body {
   }
 
   .ph-container{
-    width:500px;
+    width:100%;
     height: 200px;
     position: relative;
-    left: 470px;
-    top: 30px
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .ph-options{
@@ -218,25 +219,30 @@ body {
 
 .sulfuricEQ{
   background-image: url('sulfuricEQ.png');
-  top: 180px;
-  left: 400px;
 }
  
 .causticEQ{
   background-image: url('causticEQ.png');
-  top: 180px;
-  left: 400px;
 }
 .activeEQ{
   background-image: url('activeEQ.png');
-  top: 80px;
-  left: 450px;
 }
 .ffaEQ{
   background-image: url('ffaEQ.png');
-  top: 80px;
-  left: 450px;
 }
 
+.header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pic-container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width:100%;
+    height: 500px;
+}
 
  
